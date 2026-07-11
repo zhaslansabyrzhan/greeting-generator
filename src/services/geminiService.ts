@@ -1,5 +1,5 @@
 import { GoogleGenAI } from '@google/genai'
-import { ToneType, type GenerateGreetingOptions, type GenerateGreetingImageOptions } from '@/types'
+import { ToneType } from '@/types'
 
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY })
 
