@@ -40,9 +40,9 @@ export const generateGreeting = async (occasion: 'День Рожденья' | '
 
     if (response.text) {
       return response.text
+    } else {
+      throw new Error('Не удалось сгенерировать текст.')
     }
-
-    throw new Error('Не удалось сгенерировать текст.')
 
   } catch (error) {
     console.error('Gemini text API error', error)
