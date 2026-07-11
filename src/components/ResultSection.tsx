@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Check, Copy, ImageIcon, Sparkles } from 'lucide-react'
 
-interface IResultSectionProps {
+interface ResultSectionProps {
   content: string
   isLoading: boolean
   imageUrl: string | null
 }
 
-export const ResultSection = ({ content, isLoading, imageUrl }: IResultSectionProps) => {
+export const ResultSection = ({ content, isLoading, imageUrl }: ResultSectionProps) => {
   const [copied, setCopied] = useState<boolean>(false)
 
   const handleCopy = async (): Promise<void> => {

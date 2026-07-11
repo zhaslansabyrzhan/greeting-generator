@@ -1,13 +1,13 @@
 import type { LucideIcon } from 'lucide-react'
 
-interface IOccasionButtonProps {
+interface OccasionButtonProps {
   label: string
   icon: LucideIcon
   selected: boolean
   onClick: () => void
 }
 
-export const OccasionButton = ({ label, icon: Icon, selected, onClick }: IOccasionButtonProps) => {
+export const OccasionButton = ({ label, icon: Icon, selected, onClick }: OccasionButtonProps) => {
   return (
     <button
       onClick={onClick}

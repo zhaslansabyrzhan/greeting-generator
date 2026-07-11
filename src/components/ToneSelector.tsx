@@ -1,12 +1,12 @@
 import type { Dispatch, SetStateAction } from 'react'
 import { ToneType } from '@/types'
 
-interface IToneSelectorProps {
+interface ToneSelectorProps {
   selectedTone: ToneType
   setTone: Dispatch<SetStateAction<ToneType>>
 }
 
-export const ToneSelector = ({ selectedTone, setTone }: IToneSelectorProps) => {
+export const ToneSelector = ({ selectedTone, setTone }: ToneSelectorProps) => {
   const tones = Object.values(ToneType)
 
   return (

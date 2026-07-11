@@ -4,7 +4,7 @@ import { ToneSelector } from '@/components/ToneSelector'
 import { Globe, ImageIcon } from 'lucide-react'
 import { LANGUAGES } from '@/constants'
 
-interface IExtraDetailsSectionProps {
+interface ExtraDetailsSectionProps {
   error: string | null
   language: string
   selectedTone: ToneType
@@ -22,7 +22,7 @@ export const ExtraDetailsSection = ({
   setTone,
   setLanguage,
   setIsImageEnabled,
-}: IExtraDetailsSectionProps) => {
+}: ExtraDetailsSectionProps) => {
   return (
     <section className="space-y-4">
       <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">

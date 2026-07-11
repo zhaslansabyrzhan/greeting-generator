@@ -1,12 +1,12 @@
 import type { ReactNode } from 'react'
 
-interface IGenerateButtonProps {
+interface GenerateButtonProps {
   children: ReactNode
   isLoading: boolean
   onClick: () => Promise<void>
 }
 
-export const GenerateButton = ({ children, isLoading, onClick }: IGenerateButtonProps) => {
+export const GenerateButton = ({ children, isLoading, onClick }: GenerateButtonProps) => {
   return (
     <button
       onClick={onClick}

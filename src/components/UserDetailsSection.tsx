@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 import { Calendar, Heart, User } from 'lucide-react'
 
-interface IUserDetailsSectionProps {
+interface UserDetailsSectionProps {
   name: string
   age: string
   interests: string
@@ -21,7 +21,7 @@ export const UserDetailsSection = ({
   setAge,
   setInterests,
   setError,
-}: IUserDetailsSectionProps) => {
+}: UserDetailsSectionProps) => {
   return (
     <section className="space-y-4">
       <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
